@@ -2,9 +2,9 @@ form pyrogram import Client, filters
 
 Alif=Client(
     "Pyrogram bot",
-    bot_token="bot token",
-    api_id="api id",
-    api_hash="api hash"
+    bot_token="5277391090:AAGu1AdEbl7-txB077OMIUuA--fYaiqIBW4",
+    api_id="18714739",
+    api_hash="7795554afe9b45d359f28c5455c0b1e1"
 )
 
 
