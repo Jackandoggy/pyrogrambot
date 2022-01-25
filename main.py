@@ -1,4 +1,4 @@
-form pyrogram import Client, filters 
+from pyrogram import Client, filters
 
 Alif=Client(
     "Pyrogram bot",
