@@ -4,3 +4,6 @@ youtube-search-python==1.4.6
 youtube_search
 youtube-dl
 yt-dlp
+aiohttp==3.7.4
+aiofiles
+wget
