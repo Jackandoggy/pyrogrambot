@@ -7,17 +7,9 @@ Alif=Client(
     api_hash="7795554afe9b45d359f28c5455c0b1e1"
 )
 
-
-
-@Alif.on_massage(filters.command("start")) 
+@Alif.on_message(filters.command("start"))           
 async def start_message(bot, message):
-     await message.reply_text("hi")  
-
-
-
-
-
-
+    await message.reply_text("hi")
 
 
 
