@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from pyrogram.types import message, InlineKeyboardButton, InlineKeyboardMarkup 
 
 Alif=Client(
     "Pyrogram bot",
@@ -9,7 +10,12 @@ Alif=Client(
 
 @Alif.on_message(filters.command("start"))           
 async def start_message(bot, message):
-    await message.reply_text("hi")
+    await message.reply_text(
+        text="start✅",
+        reply_markup=InlineKeyboardMarkup( [[
+            InlineKeyboardButton("l"
+
+
 
 
 
