@@ -12,7 +12,7 @@ Alif=Client(
 async def start_message(bot, message):
     await message.reply_text(
         text="start✅ https://t.me/UltroidSupport",
-        disable_web_page_preview
+        disable_web_page_preview=True
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg")
             ]]
