@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
 Alif=Client(
     "Pyrogram bot",
-    bot_token="5277391090:AAGu1AdEbl7-txB077OMIUuA--fYaiqIBW4",
+    bot_token="5277391090:AAGL8d4ZkZKVPXZ9iCFN3wkFeYYfKhVq8-Q",
     api_id="18714739",
     api_hash="7795554afe9b45d359f28c5455c0b1e1"
 )
