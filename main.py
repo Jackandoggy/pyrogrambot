@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
-Import random
+import random
 
 Alif=Client(
     "Pyrogram bot",
