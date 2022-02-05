@@ -11,7 +11,7 @@ Alif=Client(
 @Alif.on_message(filters.command("start"))           
 async def start_message(bot, message):
     await message.reply_text(
-        text="start✅",
+        text="start✅ https://t.me/UltroidSupport",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg")
             ]]
