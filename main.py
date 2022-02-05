@@ -13,8 +13,9 @@ async def start_message(bot, message):
     await message.reply_text(
         text="start✅",
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton("l"
-
+            InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg")
+            ]]
+            )
 
 
 
