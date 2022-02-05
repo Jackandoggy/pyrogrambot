@@ -13,7 +13,6 @@ async def start_message(bot, message):
     await message.reply_photo(
         photo="https://telegra.ph/file/a34f48501859a206568c1.jpg",
         caption="start✅ https://t.me/UltroidSupport",
-        disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg")
             ]]
