@@ -52,7 +52,7 @@ Mentoin = {msege.from_user.mention}"""
     await msege.reply_text(text=text)
 
 @Alif.on_message(filters.command("sticker"))
-async def demo(bot, msege):
+async def ok(bot, ok):
     await message.reply_sticker(
         sticker="CAACAgUAAxkBAAECBmxiGga9aXAaMGMLGsydNoQffbqNYwACJAADsx6IFZIHKachbCv9HgQ"
     )
