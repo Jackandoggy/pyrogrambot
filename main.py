@@ -65,8 +65,8 @@ async def ok(bot, ok):
 
 @Alif.on_message(filters.command("video"))
 async def da(bot, da):
-    await da.reply_video(
-    video="https://telegra.ph/file/3c5119738b90107900c08.mp4",
+    await da.reply_Video(
+    Video="https://telegra.ph/file/3c5119738b90107900c08.mp4",
     Caption="hi bro",
     Reply_markup=InlineKeyboardMarkup( [[
     InlineKeyboardButton("hi", url="t.me/Alifmuhammed_tg")
