@@ -46,7 +46,7 @@ async def start_message(bot, message):
 
 
 
-@Alif.on_message(filters.command("start"))
+@Alif.on_message(filters.command("id"))
 async def demo(bot, msege):
     text = f"""
 First Name = {msege.from_user.first_name}
