@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
 import random
 
 Alif=Client(
@@ -22,7 +22,8 @@ So Please Request Again
 """
 
 INFO_BUTTON = [[
-  InlineKeyboardButton("MY DEV", url="t.me/Alifmuhammed_tg")
+  InlineKeyboardButton("MY DEV", url="t.me/Alifmuhammed_tg"),
+  InlineKeyboardButton("NEXT", callback_data="start")
   ]]
 
 
@@ -73,8 +74,18 @@ async def da(bot, da):
     ]]
    )
   )
+#callback
 
-
+@Alif.on_callback_query()
+async def callback(Client: Alif, query: CallbackQuery):
+    if query.data == "start":
+        await query.message.edit(
+            text="""
+Hey bro sugamano 
+antta panni kayinnilla poyittu pinavva
+"""
+       )
+       
 
 
 
