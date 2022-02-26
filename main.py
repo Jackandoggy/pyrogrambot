@@ -33,7 +33,8 @@ async def start_message(bot, message):
         photo=random.choice(ALL_PIC),
         caption=f"hey {message.from_user.mention}",
         reply_markup=InlineKeyboardMarkup( [[
-            InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg")
+            InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
+            InlineKeyboardButton("NEXT", callback_data="start")
             ]]
             )
          )
