@@ -53,7 +53,7 @@ Mentoin = {msege.from_user.mention}"""
 
 @Alif.on_message(filters.command("sticker"))
 async def ok(bot, ok):
-    await message.reply_sticker(
+    await ok.reply_sticker(
         sticker="CAACAgUAAxkBAAECBmxiGga9aXAaMGMLGsydNoQffbqNYwACJAADsx6IFZIHKachbCv9HgQ"
     )
 
