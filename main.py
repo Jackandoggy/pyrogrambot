@@ -26,7 +26,7 @@ INFO_BUTTON = [[
   ]]
 
 
-@Alif.on_message(filter.private & filters.command("start"))           
+@Alif.on_message(filters.private & filters.command("start"))           
 async def start_message(bot, message):
     await message.reply_photo(
         photo=random.choice(ALL_PIC),
