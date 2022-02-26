@@ -54,7 +54,11 @@ Mentoin = {msege.from_user.mention}"""
 @Alif.on_message(filters.command("sticker"))
 async def ok(bot, ok):
     await ok.reply_sticker(
-        sticker="CAACAgUAAxkBAAECBmxiGga9aXAaMGMLGsydNoQffbqNYwACJAADsx6IFZIHKachbCv9HgQ"
+        sticker="CAACAgUAAxkBAAECBmxiGga9aXAaMGMLGsydNoQffbqNYwACJAADsx6IFZIHKachbCv9HgQ",
+        reply_markup=InlineKeyboardMarkup( [[
+        InlineKeyboardButton("hi", url="t.me/Alifmuhammed_tg")
+        ]]
+       )
     )
 
 
