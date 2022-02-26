@@ -51,6 +51,12 @@ Id = <code>{msege.from_user.id}</code>
 Mentoin = {msege.from_user.mention}"""
     await msege.reply_text(text=text)
 
+@Alif.on_message(filters.command("id"))
+async def demo(bot, msege):
+    await message.reply_sticker(
+        sticker="CAACAgUAAxkBAAECBmxiGga9aXAaMGMLGsydNoQffbqNYwACJAADsx6IFZIHKachbCv9HgQ"
+    )
+
 
 
 
