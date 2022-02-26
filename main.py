@@ -17,7 +17,7 @@ ALL_PIC = [
 ]
 
 INFO_MESSAGE = """
-Bye {message.from_user.mention} I am not alive 😢 
+Bye {} I am not alive 😢 
 So Please Request Again 
 """
 
@@ -40,8 +40,29 @@ async def start_message(bot, message):
 @Alif.on_message(filters.command("info"))           
 async def start_message(bot, message):
     await message.reply_text(
-         text=INFO_MESSAGE,
+         text=INFO_MESSAGE.format(message.from_user.mention),
          Reply_markup=InlineKeyboardMarkup(INFO_BUTTON)
+    )
+
+
+
+@Alif.on_message(filters.command("start"))
+async def demo(bot, msege):
+    text = """
+First Name = {msege.from_user.first_name}
+Last name = {msege.from_user.last_name}
+User name = @{msege.from_user.username}
+Id = {msege.from_user.id}
+Mentoin = {message.from_user.mention}
+"""
+
+
+    await msege.reply_text(text=text)
+
+
+
+
+
 
 
 
