@@ -53,7 +53,7 @@ First Name = {msege.from_user.first_name}
 Last name = {msege.from_user.last_name}
 User name = @{msege.from_user.username}
 Id = {msege.from_user.id}
-Mentoin = {message.from_user.mention}"""
+Mentoin = {msege.from_user.mention}"""
     await msege.reply_text(text=text)
 
 
