@@ -17,7 +17,7 @@ ALL_PIC = [
 ]
 
 INFO_MESSAGE = """
-Bye bro I am not alive 😢 
+Bye {message.from_user.mention} I am not alive 😢 
 So Please Request Again 
 """
 
@@ -30,7 +30,7 @@ INFO_BUTTON = [[
 async def start_message(bot, message):
     await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption="start✅ https://t.me/UltroidSupport",
+        caption=f"hey {message.from_user.mention}",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg")
             ]]
