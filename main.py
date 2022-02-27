@@ -35,6 +35,8 @@ async def start_message(bot, message):
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("NEXT", callback_data="start")
+            ],[
+                        InlineKeyboardButton("NEXT", callback_data="help")
             ]]
             )
          )
@@ -84,6 +86,13 @@ async def callback(Client: Alif, query: CallbackQuery):
             text="""
 Hey bro sugamano 
 antta panni kayinnilla poyittu pinavva
+"""
+       )
+
+    elif query.data == "help":
+        await query.message.edit(
+             text="""
+Atinuu njan anttu vanam santana
 """
        )
        
