@@ -86,7 +86,10 @@ async def callback(Client: Alif, query: CallbackQuery):
             text="""
 Hey bro sugamano 
 antta panni kayinnilla poyittu pinavva
-"""
+""",
+       reply_markup=InlineKeyboardMarkup ( [ [
+       InlineKeyboardButton("Close", url="t.me/Alifmuhammed_tg")
+       
        )
 
     elif query.data == "help":
