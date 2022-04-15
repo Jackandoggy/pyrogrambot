@@ -36,7 +36,7 @@ async def start_message(bot, message):
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("NEXT", callback_data="start")
             ],[
-            InlineKeyboardButton("NEXT", callback_data="help")
+            InlineKeyboardButton("NEXT", callback_data="close")
             ]]
             )
          )
@@ -61,7 +61,6 @@ async def ok(bot, ok):
         sticker="CAACAgUAAxkBAAECBmxiGga9aXAaMGMLGsydNoQffbqNYwACJAADsx6IFZIHKachbCv9HgQ",
         reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton("hi", url="t.me/Alifmuhammed_tg")
-        InlineKeyboardButton("okde", callback_data="close")
         ]]
        )
     )
