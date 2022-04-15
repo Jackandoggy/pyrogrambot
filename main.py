@@ -90,7 +90,7 @@ async def callback (bot, mmt : CallbackQuery):
     elif mmt.data == "okbro":
         await mmt.message.edit(
             text="seen"
-            reply_markup=InlineKeyboardMarkup([[
+            reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("😃" , callback_data = "mm")
                ]]
            )
