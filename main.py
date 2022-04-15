@@ -77,28 +77,34 @@ async def da(bot, da):
     ]]
    )
   )
-#callback
+
+
 
 @Alif.on_callback_query()
-async def callback(Client: Alif, query: CallbackQuery):
-    if query.data == "start":
-        await query.message.edit(
-            text="""
-Hey bro sugamano 
-antta panni kayinnilla poyittu pinavva
-"""
-       reply_markup=InlineKeyboardMarkup ( [ [
-       InlineKeyboardButton("Close", url="t.me/Alifmuhammed_tg")
-       
-       )
+async def callback (bot, mmt : CallbackQuery):
+    if msg.data == "mm":  
+        await mmt.message.edit(  
+            text="hi bro"
+        )
+     
+    elif mmt.data == "okbro"
+        await mmt.message.edit(
+            text="seen"
+            reply_markup=InlineKeyboardMarkup([[
+               InlineKeyboardButton("😃" , callback_data = "mm")
+               ]]
+           )
+        )
+            
 
-    elif query.data == "help":
-        await query.message.edit(
-             text="""
-Atinuu njan anttu vanam santana
-"""
-       )
-       
+
+
+
+
+
+
+
+
 
 
 
