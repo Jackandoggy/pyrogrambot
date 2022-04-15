@@ -31,7 +31,7 @@ INFO_BUTTON = [[
 async def start_message(bot, message):
     await message.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"hey {message.from_user.mention}",
+        caption=f"hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("NEXT", callback_data="start")
