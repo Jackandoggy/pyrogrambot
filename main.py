@@ -4,7 +4,7 @@ import random
 
 Alif=Client(
     "Pyrogram bot",
-    bot_token="5257455119:AAHHq3lOpT6j0JcM8EMpI6w8l-uR2OrKNLM",
+    bot_token="5138195964:AAFY2hPs9A5eZe5ncd0Ox1DF9zo25utA7_Q",
     api_id="17863381",
     api_hash="793044f52346c11ab8cb792325dfbc5d"
 )
