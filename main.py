@@ -61,7 +61,7 @@ async def ok(bot, ok):
         sticker="CAACAgUAAxkBAAECBmxiGga9aXAaMGMLGsydNoQffbqNYwACJAADsx6IFZIHKachbCv9HgQ",
         reply_markup=InlineKeyboardMarkup( [[
         InlineKeyboardButton("hi", url="t.me/Alifmuhammed_tg")
-        InlineKeyboardButton("om", callback_data="close")
+        InlineKeyboardButton("okde", callback_data="close")
         ]]
        )
     )
