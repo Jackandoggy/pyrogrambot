@@ -36,7 +36,7 @@ async def start_message(bot, message):
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("NEXT", callback_data="start")
             ],[
-                        InlineKeyboardButton("NEXT", callback_data="help")
+            InlineKeyboardButton("NEXT", callback_data="help")
             ]]
             )
          )
@@ -83,7 +83,7 @@ async def da(bot, da):
 
 @Alif.on_callback_query()
 async def callback (bot, mmt : CallbackQuery):
-    if msg.data == "mm":  
+    if mmt.data == "mm":  
         await mmt.message.edit(  
             text="hi bro"
         )
