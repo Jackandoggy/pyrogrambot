@@ -109,7 +109,7 @@ async def callback_data (bots, msg : CallbackQuery):
 
 
 
-    elif query.data == "alert":
+    elif query.data == "hi":
         await query.answer("hi")
 
 
