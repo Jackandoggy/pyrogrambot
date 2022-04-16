@@ -1,9 +1,10 @@
 from pyrogram import Client as Alif, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.errors import UserNotParticipant 
 import random
 import datetime
 
-
+force_channel = "teamclifford"
 
 ALL_PIC = [
  "https://telegra.ph/file/a34f48501859a206568c1.jpg",
@@ -14,6 +15,28 @@ ALL_PIC = [
 
 @Alif.on_message(filters.private & filters.command("start"))           
 async def start_message(bot, message):
+    if force_channel:
+        try:
+            user = await.bot.get_chat_member(force_channel, message.from_user.id)
+            if.user.status =="kickout":
+                await message.reply_text("You banned")
+                return
+        except UserNotParticipant:
+            await message.reply_text(
+                text="join now",
+                reply_markup=InlineKeyboardMarkup( [[
+                 InlineKeyboardButton("JOin", url=f"t.me/{force_channel}")
+                 ]]
+                )
+             )
+       
+         
+
+
+
+
+
+
     await message.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"{get} dear hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
