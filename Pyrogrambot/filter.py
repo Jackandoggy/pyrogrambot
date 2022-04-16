@@ -5,7 +5,7 @@ from pyrogram import Client, filters
 @Client.on_message(filters.regex("hi") | filter.regex("Hi"))                     
 async def regex(bot, msg):
     await msg.reply_text("Hi bro"),
-         reply_markup=InlineKeyboardMarkup( [[
+        reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("alert", callback_data="hi"),
             InlineKeyboardButton("Help", callback_data="help")
