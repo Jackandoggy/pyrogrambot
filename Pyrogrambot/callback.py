@@ -1,3 +1,7 @@
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
+
+
+
 @Alif.on_callback_query()
 async def callback (bot, mmt : CallbackQuery):
     if mmt.data == "mm":  
