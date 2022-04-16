@@ -101,5 +101,5 @@ async def start_gugmessage(bot, query):
         get="Good Night"
 
 
-    await message.reply_text("hi {get}")
+    await query.reply_text("hi {get}")
 
