@@ -38,7 +38,7 @@ async def start_message(bot, msg):
 
 
 
-    await message.reply_photo(
+    await msg.reply_photo(
         photo=random.choice(ALL_PIC),
         caption=f"{get} dear hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
