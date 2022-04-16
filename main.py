@@ -35,6 +35,7 @@ async def start_message(bot, message):
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("alert", callback_data="hi")
+            InlineKeyboardButton("Help", callback_data="help")
             ],[
             InlineKeyboardButton("NEXT", callback_data="close")
             ]]
@@ -87,9 +88,13 @@ async def callback (bot, mmt : CallbackQuery):
             text="hi bro"
         )
      
-    elif mmt.data == "okbro":
+    elif mmt.data == "help":
         await mmt.message.edit(
-            text="seen",
+            text="""Here my help menu
+/id to get id
+/video to get video
+/sticker to get stickers
+""",
             reply_markup=InlineKeyboardMarkup( [[
                InlineKeyboardButton("😃" , callback_data = "mm")
                ]]
