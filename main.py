@@ -16,15 +16,6 @@ ALL_PIC = [
  "https://telegra.ph/file/0f618d79c4084b48140c2.jpg"
 ]
 
-INFO_MESSAGE = """
-Bye {} I am not alive 😢 
-So Please Request Again 
-"""
-
-INFO_BUTTON = [[
-  InlineKeyboardButton("MY DEV", url="t.me/Alifmuhammed_tg"),
-  InlineKeyboardButton("NEXT", callback_data="start")
-  ]]
 
 
 @Alif.on_message(filters.private & filters.command("start"))           
