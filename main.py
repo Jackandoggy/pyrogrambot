@@ -34,7 +34,7 @@ async def start_message(bot, message):
         caption=f"hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
-            InlineKeyboardButton("alert", callback_data="alert")
+            InlineKeyboardButton("alert", callback_data="hi")
             ],[
             InlineKeyboardButton("NEXT", callback_data="close")
             ]]
@@ -102,7 +102,7 @@ async def callback (bot, mmt : CallbackQuery):
 
 
     elif mmt.data == "hi":
-        await query.answer("hi")
+        await mmt.answer("𝖸𝗈𝗎 𝖺𝗋𝖾 𝗂𝗇 𝗆𝗒 𝗌𝖾𝖼𝗈𝗇𝖽 𝗉𝖺𝗀𝖾.", show_alert=True)
 
 
 
