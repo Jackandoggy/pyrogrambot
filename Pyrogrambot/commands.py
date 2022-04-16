@@ -28,7 +28,8 @@ async def start_message(bot, message):
                  InlineKeyboardButton("JOin", url=f"t.me/{force_channel}")
                  ]]
                 )
-             )
+            )
+            return 
        
          
 
