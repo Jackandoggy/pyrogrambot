@@ -1,4 +1,5 @@
 from pyrogram import Client
+from os
 
 Alif=Client(
     "Pyrogram bot",
