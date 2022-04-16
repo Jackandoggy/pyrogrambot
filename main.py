@@ -1,5 +1,5 @@
 from pyrogram import Client
-from os
+from Config import BOT_TOKEN, API_ID, API_HASH
 
 Alif=Client(
     "Pyrogram bot",
