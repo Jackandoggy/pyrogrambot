@@ -1,6 +1,8 @@
 from pyrogram import Client as Alif, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import random
+import datetime
+
 
 
 ALL_PIC = [
@@ -13,8 +15,26 @@ ALL_PIC = [
 @Alif.on_message(filters.private & filters.command("start"))           
 async def start_message(bot, message):
     await message.reply_photo(
+
+    M = datetime.datetime.now()
+
+    time = m.hour
+
+    if time < 12:
+        get="Good Morning"
+
+    elif time <15:
+        get="Good Afternoon"
+
+    elif time <19:
+        get="Good Evening"
+
+  else:
+      get="Good Night"
+
+
         photo=random.choice(ALL_PIC),
-        caption=f"hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
+        caption=f"{get} dear hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("alert", callback_data="hi"),
