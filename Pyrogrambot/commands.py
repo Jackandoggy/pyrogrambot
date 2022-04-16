@@ -62,7 +62,7 @@ async def da(bot, da):
   )
 
 @Alif.on_message(filters.private & filters.command("staryt"))           
-async def start_message(bot, query):
+async def start_gugmessage(bot, query):
 
     m = datetime.datetime.now()
 
