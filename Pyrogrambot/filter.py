@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 
 
 
-@Client.on_message(filters.regex("hi") | filter.regex("Hi"))                     
+@Client.on_message(filters.regex("hi"))                     
 async def regex(bot, msg):
     await msg.reply_text(
         text="hi",
