@@ -100,16 +100,8 @@ async def callback (bot, mmt : CallbackQuery):
     elif mmt.data == "close":
         await mmt.message.delete()
 
-@Alif.on_callback_query()
-async def callback_data (bots, msg : CallbackQuery):
-    if msg.data == "alert": 
-        await msg.answer("bye")
 
-
-
-
-
-    elif query.data == "hi":
+    elif mmt.data == "hi":
         await query.answer("hi")
 
 
