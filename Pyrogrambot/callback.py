@@ -11,7 +11,10 @@ async def callback (bot, mmt : CallbackQuery):
         )
      
     elif mmt.data == "help":
-        await mmt.message.edit(
+        reply1 = await mmt.message.edit("○○○")
+        reply2 = await reply1.edit("●○○")
+        reply3 = await reply2.edit("●●○")
+        await reply3.edit("●●●")
             text="""Here my help menu
 /id to get id
 /video to get video
