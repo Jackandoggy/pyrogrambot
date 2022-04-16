@@ -102,10 +102,10 @@ async def callback (bot, mmt : CallbackQuery):
 
 
 
-@Alif.on_callback_query()
-async def callback_data(bots, query):
-    if query.data ==  "alert":  
-        await query.answer("bye")
+
+
+    elif query.data == "alert":
+        await query.answer("hi")
 
 
 
