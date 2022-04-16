@@ -2,9 +2,9 @@ from pyrogram import Client
 
 Alif=Client(
     "Pyrogram bot",
-    bot_token="5138195964:AAFY2hPs9A5eZe5ncd0Ox1DF9zo25utA7_Q",
-    api_id="17863381",
-    api_hash="793044f52346c11ab8cb792325dfbc5d",
+    bot_token=BOT_TOKEN,
+    api_id=API_ID,
+    api_hash=API_HASH,
     plugins=dict(root="Pyrogrambot")
 )
 
