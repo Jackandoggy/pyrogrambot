@@ -34,7 +34,7 @@ async def start_message(bot, message):
         caption=f"hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
-            InlineKeyboardButton("alert", callback_data="hi")
+            InlineKeyboardButton("alert", callback_data="hi"),
             InlineKeyboardButton("Help", callback_data="help")
             ],[
             InlineKeyboardButton("NEXT", callback_data="close")
