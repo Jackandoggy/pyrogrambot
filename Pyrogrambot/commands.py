@@ -3,6 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors import UserNotParticipant 
 import random
 import datetime
+import pytz 
 
 force_channel = "teamclifford"
 
@@ -88,7 +89,7 @@ async def da(bot, da):
 @Alif.on_message(filters.private & filters.command("staryt"))           
 async def start_gugmessage(bot, query):
 
-    m = datetime.datetime.now()
+    m = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
 
     time = m.hour
 
