@@ -15,21 +15,6 @@ ALL_PIC = [
 @Alif.on_message(filters.private & filters.command("start"))           
 async def start_message(bot, message):
     await message.reply_photo(
-
-    M = datetime.datetime.now()
-
-    time = m.hour
-
-    if time < 12:
-        get="Good Morning"
-    elif time <15:
-        get="Good Afternoon"
-    elif time <19:
-        get="Good Evening"
-  else:
-      get="Good Night"
-
-
         photo=random.choice(ALL_PIC),
         caption=f"{get} dear hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
@@ -75,4 +60,23 @@ async def da(bot, da):
     ]]
    )
   )
+
+@Alif.on_message(filters.private & filters.command("staryt"))           
+async def start_message(bot, query):
+
+    M = datetime.datetime.now()
+
+    time = m.hour
+
+    if time < 12:
+        get="Good Morning"
+    elif time <15:
+        get="Good Afternoon"
+    elif time <19:
+        get="Good Evening"
+  else:
+      get="Good Night"
+
+
+    await message.reply_text("hi {get}")
 
