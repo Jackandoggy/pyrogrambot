@@ -34,7 +34,7 @@ async def start_message(bot, message):
         caption=f"hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
-            InlineKeyboardButton("NEXT", callback_data="private")
+            InlineKeyboardButton("alert", callback_data="alert")
             ],[
             InlineKeyboardButton("NEXT", callback_data="close")
             ]]
@@ -107,8 +107,6 @@ async def callback (bots, msg : CallbackQuery):
     if msg.data ==  "alert":  
         await msg.answer("bye")
 
-    elif msg.data == "private":
-       await msg.answer("bye")
 
 
 
