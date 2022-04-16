@@ -22,13 +22,10 @@ async def start_message(bot, message):
 
     if time < 12:
         get="Good Morning"
-
     elif time <15:
         get="Good Afternoon"
-
     elif time <19:
         get="Good Evening"
-
   else:
       get="Good Night"
 
