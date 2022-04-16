@@ -64,7 +64,7 @@ async def da(bot, da):
 @Alif.on_message(filters.private & filters.command("staryt"))           
 async def start_message(bot, query):
 
-    M = datetime.datetime.now()
+    m = datetime.datetime.now()
 
     time = m.hour
 
