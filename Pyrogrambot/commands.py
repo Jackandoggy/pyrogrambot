@@ -40,7 +40,7 @@ async def start_message(bot, msg):
 
     await msg.reply_photo(
         photo=random.choice(ALL_PIC),
-        caption=f"{get} dear hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
+        caption=f" dear hey {message.from_user.mention}do [hi](https://t.me/CinemaChandagroup)",
         reply_markup=InlineKeyboardMarkup( [[
             InlineKeyboardButton("𝗱𝗲𝘃", url="https://t.me/Alifmuhammed_tg"),
             InlineKeyboardButton("alert", callback_data="hi"),
