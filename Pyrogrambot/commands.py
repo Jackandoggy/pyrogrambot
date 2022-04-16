@@ -14,10 +14,10 @@ ALL_PIC = [
 
 
 @Alif.on_message(filters.private & filters.command("start"))           
-async def start_message(bot, message):
+async def start_message(bot, msg):
     if force_channel:
         try:
-            user = await.bot.get_chat_member(force_channel, message.from_user.id)
+            user = await bot.get_chat_member(force_channel, msg.from_user.id)
             if.user.status =="kickout":
                 await message.reply_text("You banned")
                 return
