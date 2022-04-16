@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
 
-@Client.on_message(filters.regex("hi"))                     
+@Client.on_message(filters.regex("hi") | filters.regex("Hi")                  
 async def regex(bot, msg):
     await msg.reply_text(
         text="hi",
